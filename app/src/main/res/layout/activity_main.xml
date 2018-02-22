@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.fiap.demosoap.MainActivity"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1º valor"/>
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2º valor"/>
+
+    <Button
+        android:id="@+id/btSomar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOMAR"/>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="80sp"
+        android:text="0"/>
+
+</LinearLayout>
