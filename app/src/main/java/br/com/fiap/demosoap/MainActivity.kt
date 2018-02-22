@@ -3,6 +3,7 @@ package br.com.fiap.demosoap
 import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import org.ksoap2.SoapEnvelope
 import org.ksoap2.serialization.PropertyInfo
@@ -24,8 +25,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btSomar.setOnClickListener({
-            CallWebService().execute(etNum1.text.toString(), etNum2.text.toString(), "+")
+        btCalcular.setOnClickListener({
+            if(spOperacoes.selectedItem.toString() == "/" && Integer.parseInt(etNum2.text.toString()) == 0){
+                Toast.
+            }
+
+            CallWebService()
+                    .execute(etNum1.text.toString(),
+                            etNum2.text.toString(),
+                            spOperacoes.selectedItem.toString())
         })
 
     }
